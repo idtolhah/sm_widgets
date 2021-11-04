@@ -1,4 +1,4 @@
-# sinarmas_widget
+# sm_widget
 
 A new Flutter project.
 
