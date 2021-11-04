@@ -9,11 +9,11 @@ import 'package:sinarmas_widget/widgets/code_cards.dart';
 import 'package:sinarmas_widget/widgets/code_chips.dart';
 import 'package:sinarmas_widget/widgets/code_datepicker.dart';
 import 'package:sinarmas_widget/widgets/code_dialogs.dart';
+import 'package:sinarmas_widget/widgets/code_drawer.dart';
 import 'package:sinarmas_widget/widgets/code_expands.dart';
 import 'package:sinarmas_widget/widgets/code_list.dart';
 import 'package:sinarmas_widget/widgets/code_progress.dart';
 import 'package:sinarmas_widget/widgets/code_timepicker.dart';
-import 'package:sinarmas_widget/widgets/code_toast.dart';
 
 void main() {
   runApp(const MyApp());
@@ -47,6 +47,25 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          backgroundColor: MyColors.primary,
+          brightness: Brightness.dark,
+          iconTheme: IconThemeData(color: MyColors.grey_3),
+          title: Text("Toolbar"),
+          actions: <Widget>[
+            IconButton(
+                icon: Icon(Icons.search), onPressed: () {}), // overflow menu
+            PopupMenuButton<String>(
+              onSelected: (String value) {},
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                  value: "Settings",
+                  child: Text("Settings"),
+                ),
+              ],
+            )
+          ]),
+      drawer: CodeDrawer(),
       body: SafeArea(
         child: SingleChildScrollView(
             padding: EdgeInsets.all(15),
