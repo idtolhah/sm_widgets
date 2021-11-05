@@ -1,8 +1,8 @@
 // ignore_for_file: unnecessary_new, prefer_const_constructors, sized_box_for_whitespace, prefer_const_declarations, non_constant_identifier_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/my_colors.dart';
 import 'package:flutter/widgets.dart';
+import 'package:sinarmas_widget/shared/theme.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
 class CodeToast extends StatefulWidget {
@@ -29,7 +29,7 @@ class _CodeToastState extends State<CodeToast> {
             style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
-                primary: MyColors.accent),
+                primary: kAccentColor),
             child: Text("SIMPLE", style: TextStyle(color: Colors.white)),
             onPressed: () {
               showSimpleToast(context);
@@ -42,7 +42,7 @@ class _CodeToastState extends State<CodeToast> {
             style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
-                primary: MyColors.accent),
+                primary: kAccentColor),
             child:
                 Text("COLORED PRIMARY", style: TextStyle(color: Colors.white)),
             onPressed: () {
@@ -58,7 +58,7 @@ class _CodeToastState extends State<CodeToast> {
             style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
-                primary: MyColors.accent),
+                primary: kAccentColor),
             child: Text("SIMPLE", style: TextStyle(color: Colors.white)),
             onPressed: () {
               showSimpleSnackbar(context);
@@ -71,7 +71,7 @@ class _CodeToastState extends State<CodeToast> {
             style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
-                primary: MyColors.accent),
+                primary: kAccentColor),
             child: Text("WITH ACTION", style: TextStyle(color: Colors.white)),
             onPressed: () {
               snackBarWithAction(context);
@@ -87,7 +87,7 @@ class _CodeToastState extends State<CodeToast> {
   }
 
   void showColoredPrimaryToast(BuildContext context) {
-    // Toast.show("Colored Primary", context, backgroundColor: MyColors.primary);
+    // Toast.show("Colored Primary", context, backgroundColor: kPrimaryColor);
   }
 
   void showSimpleSnackbar(BuildContext context) {

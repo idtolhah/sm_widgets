@@ -1,7 +1,7 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_constructors_in_immutables, avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/my_colors.dart';
+import 'package:sinarmas_widget/shared/theme.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
 class CodeTimepicker extends StatefulWidget {
@@ -28,7 +28,7 @@ class _CodeTimepickerState extends State<CodeTimepicker> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 padding: EdgeInsets.symmetric(horizontal: 30),
-                primary: MyColors.accent),
+                primary: kAccentColor),
             child: Text("PICK TIME", style: TextStyle(color: Colors.white)),
             onPressed: () {
               showDialogPicker(context);

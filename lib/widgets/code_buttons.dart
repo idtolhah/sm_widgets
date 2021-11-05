@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/my_colors.dart';
+import 'package:sinarmas_widget/shared/theme.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
 class CodeButtons extends StatelessWidget {
@@ -23,15 +23,15 @@ class CodeButtons extends StatelessWidget {
             ),
             Spacer(),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(onPrimary: Colors.blue[700]),
+              style: ElevatedButton.styleFrom(primary: kPrimaryColor),
               child: Text("PRIMARY", style: TextStyle(color: Colors.white)),
               onPressed: () {},
             ),
             Spacer(),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: Colors.pink),
+              style: ElevatedButton.styleFrom(primary: kSecondaryColor),
               child: Text(
-                "ACCENT",
+                "SECONDARY",
                 style: TextStyle(color: Colors.white),
               ),
               onPressed: () {},
@@ -55,7 +55,7 @@ class CodeButtons extends StatelessWidget {
               style: TextButton.styleFrom(primary: Colors.transparent),
               child: Text(
                 "PRIMARY",
-                style: TextStyle(color: MyColors.primary),
+                style: TextStyle(color: kPrimaryColor),
               ),
               onPressed: () {},
             ),
@@ -63,8 +63,8 @@ class CodeButtons extends StatelessWidget {
             TextButton(
               style: TextButton.styleFrom(primary: Colors.transparent),
               child: Text(
-                "ACCENT",
-                style: TextStyle(color: MyColors.accent),
+                "SECONDARY",
+                style: TextStyle(color: kSecondaryColor),
               ),
               onPressed: () {},
             ),
@@ -83,7 +83,7 @@ class CodeButtons extends StatelessWidget {
               style: ElevatedButton.styleFrom(primary: Colors.white),
               child: Text(
                 "PRIMARY",
-                style: TextStyle(color: MyColors.primary),
+                style: TextStyle(color: kPrimaryColor),
               ),
               onPressed: () {},
             ),
@@ -91,8 +91,8 @@ class CodeButtons extends StatelessWidget {
             ElevatedButton(
               style: ElevatedButton.styleFrom(primary: Colors.white),
               child: Text(
-                "ACCENT",
-                style: TextStyle(color: MyColors.accent),
+                "SECONDARY",
+                style: TextStyle(color: kSecondaryColor),
               ),
               onPressed: () {},
             ),
@@ -110,7 +110,7 @@ class CodeButtons extends StatelessWidget {
             IconButton(
               icon: Icon(
                 Icons.people,
-                color: MyColors.primary,
+                color: kPrimaryColor,
               ),
               onPressed: () {},
             ),
@@ -118,7 +118,7 @@ class CodeButtons extends StatelessWidget {
             IconButton(
               icon: Icon(
                 Icons.mic,
-                color: MyColors.accent,
+                color: kSecondaryColor,
               ),
               onPressed: () {},
             ),
@@ -142,7 +142,7 @@ class CodeButtons extends StatelessWidget {
             Spacer(),
             FloatingActionButton(
               heroTag: "fab2",
-              backgroundColor: MyColors.primary,
+              backgroundColor: kPrimaryColor,
               elevation: 3,
               child: Icon(
                 Icons.add,
@@ -155,7 +155,7 @@ class CodeButtons extends StatelessWidget {
             Spacer(),
             FloatingActionButton(
               heroTag: "fab3",
-              backgroundColor: MyColors.accent,
+              backgroundColor: kSecondaryColor,
               elevation: 3,
               child: Icon(
                 Icons.create,

@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/my_strings.dart';
+import 'package:sinarmas_widget/shared/dummy.dart';
 import 'package:sinarmas_widget/shared/theme.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 

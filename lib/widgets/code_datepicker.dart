@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/my_colors.dart';
+import 'package:sinarmas_widget/shared/theme.dart';
 import 'package:sinarmas_widget/utils/tools.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
@@ -29,7 +29,7 @@ class _CodeDatepickerState extends State<CodeDatepicker> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 padding: EdgeInsets.symmetric(horizontal: 30),
-                primary: MyColors.warning),
+                primary: kPrimaryColor),
             child: Text("PICK DATE", style: TextStyle(color: Colors.white)),
             onPressed: () {
               showDialogPicker(context);

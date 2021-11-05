@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/img.dart';
-import 'package:sinarmas_widget/shared/my_colors.dart';
-import 'package:sinarmas_widget/shared/my_strings.dart';
+import 'package:sinarmas_widget/shared/theme.dart';
+import 'package:sinarmas_widget/utils/img.dart';
+import 'package:sinarmas_widget/shared/dummy.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
 class CodeCards extends StatelessWidget {
@@ -53,7 +53,7 @@ class CodeCards extends StatelessWidget {
                     style: TextButton.styleFrom(primary: Colors.transparent),
                     child: Text(
                       "SHARE",
-                      style: TextStyle(color: MyColors.accent),
+                      style: TextStyle(color: kAccentColor),
                     ),
                     onPressed: () {},
                   ),
@@ -61,7 +61,7 @@ class CodeCards extends StatelessWidget {
                     style: TextButton.styleFrom(primary: Colors.transparent),
                     child: Text(
                       "EXPLORE",
-                      style: TextStyle(color: MyColors.accent),
+                      style: TextStyle(color: kAccentColor),
                     ),
                     onPressed: () {},
                   )
@@ -76,7 +76,7 @@ class CodeCards extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
           ),
-          color: MyColors.primary,
+          color: kPrimaryColor,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[

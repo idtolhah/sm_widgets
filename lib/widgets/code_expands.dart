@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/my_colors.dart';
-import 'package:sinarmas_widget/shared/my_strings.dart';
+import 'package:sinarmas_widget/shared/dummy.dart';
 import 'package:sinarmas_widget/shared/theme.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
@@ -23,7 +22,7 @@ class CodeExpands extends StatelessWidget {
       children: <Widget>[
         Container(
           padding: EdgeInsets.all(15),
-          color: MyColors.grey_5,
+          color: kPrimaryColor,
           child: Text(MyStrings.lorem_ipsum,
               textAlign: TextAlign.justify,
               style: blackTextStyle.copyWith(color: Colors.grey[800])),

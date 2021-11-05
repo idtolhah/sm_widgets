@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/my_colors.dart';
+import 'package:sinarmas_widget/shared/theme.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
 class CodeProgress extends StatelessWidget {
@@ -18,7 +18,7 @@ class CodeProgress extends StatelessWidget {
         Container(
           height: 5,
           child: LinearProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(MyColors.primary),
+            valueColor: AlwaysStoppedAnimation<Color>(kPrimaryColor),
             backgroundColor: Colors.grey[300],
           ),
         ),
@@ -26,7 +26,7 @@ class CodeProgress extends StatelessWidget {
         Text("Circular"),
         Container(height: 5),
         CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(MyColors.primary),
+          valueColor: AlwaysStoppedAnimation<Color>(kPrimaryColor),
         ),
         Container(height: 20),
       ],

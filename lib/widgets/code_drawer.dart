@@ -1,6 +1,8 @@
+// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'package:sinarmas_widget/shared/img.dart';
-import 'package:sinarmas_widget/shared/my_text.dart';
+import 'package:sinarmas_widget/shared/theme.dart';
+import 'package:sinarmas_widget/utils/img.dart';
 
 class CodeDrawer extends StatelessWidget {
   const CodeDrawer({Key? key}) : super(key: key);
@@ -15,12 +17,12 @@ class CodeDrawer extends StatelessWidget {
               height: 190,
               child: Stack(
                 children: <Widget>[
-                  Image.asset(
-                    Img.get('material_bg_1.png'),
-                    width: double.infinity,
-                    height: double.infinity,
-                    fit: BoxFit.cover,
-                  ),
+                  // Image.asset(
+                  //   Img.get('material_bg_1.png'),
+                  //   width: double.infinity,
+                  //   height: double.infinity,
+                  //   fit: BoxFit.cover,
+                  // ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 40, horizontal: 14),
                     child: CircleAvatar(
@@ -42,14 +44,11 @@ class CodeDrawer extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("John Miller",
-                              style: MyText.body2(context)?.copyWith(
-                                  color: Colors.grey[100],
+                          Text("Tolhah Aminuddin",
+                              style: blackTextStyle.copyWith(
                                   fontWeight: FontWeight.bold)),
                           Container(height: 5),
-                          Text("johnmiller@mail.com",
-                              style: MyText.body2(context)
-                                  ?.copyWith(color: Colors.grey[100]))
+                          Text("mr.tolhah@mail.com", style: greyTextStyle)
                         ],
                       ),
                     ),
@@ -59,44 +58,38 @@ class CodeDrawer extends StatelessWidget {
             ),
             ListTile(
               title: Text("Home",
-                  style: MyText.subhead(context)?.copyWith(
-                      color: Colors.black, fontWeight: FontWeight.w500)),
+                  style: blackTextStyle.copyWith(fontWeight: FontWeight.bold)),
               leading: Icon(Icons.home, size: 25.0, color: Colors.grey),
               onTap: () {},
             ),
             ListTile(
               title: Text("Trending",
-                  style: MyText.subhead(context)?.copyWith(
-                      color: Colors.black, fontWeight: FontWeight.w500)),
+                  style: blackTextStyle.copyWith(fontWeight: FontWeight.bold)),
               leading: Icon(Icons.whatshot, size: 25.0, color: Colors.grey),
               onTap: () {},
             ),
             ListTile(
               title: Text("Latest",
-                  style: MyText.subhead(context)?.copyWith(
-                      color: Colors.black, fontWeight: FontWeight.w500)),
+                  style: blackTextStyle.copyWith(fontWeight: FontWeight.bold)),
               leading: Icon(Icons.access_time, size: 25.0, color: Colors.grey),
               onTap: () {},
             ),
             ListTile(
               title: Text("Highlight",
-                  style: MyText.subhead(context)?.copyWith(
-                      color: Colors.black, fontWeight: FontWeight.w500)),
+                  style: blackTextStyle.copyWith(fontWeight: FontWeight.bold)),
               leading: Icon(Icons.highlight, size: 25.0, color: Colors.grey),
               onTap: () {},
             ),
             Divider(),
             ListTile(
               title: Text("Settings",
-                  style: MyText.subhead(context)?.copyWith(
-                      color: Colors.black, fontWeight: FontWeight.w500)),
+                  style: blackTextStyle.copyWith(fontWeight: FontWeight.bold)),
               leading: Icon(Icons.settings, size: 25.0, color: Colors.grey),
               onTap: () {},
             ),
             ListTile(
               title: Text("Help",
-                  style: MyText.subhead(context)?.copyWith(
-                      color: Colors.black, fontWeight: FontWeight.w500)),
+                  style: blackTextStyle.copyWith(fontWeight: FontWeight.bold)),
               leading: Icon(Icons.help_outline, size: 25.0, color: Colors.grey),
               onTap: () {},
             ),
