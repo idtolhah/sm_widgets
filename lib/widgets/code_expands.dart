@@ -22,7 +22,7 @@ class CodeExpands extends StatelessWidget {
       children: <Widget>[
         Container(
           padding: EdgeInsets.all(15),
-          color: kPrimaryColor,
+          color: kWhiteColor,
           child: Text(MyStrings.lorem_ipsum,
               textAlign: TextAlign.justify,
               style: blackTextStyle.copyWith(color: Colors.grey[800])),

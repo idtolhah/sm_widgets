@@ -13,7 +13,7 @@ class _CodeBottomNavbarState extends State<CodeBottomNavbar> {
   final List<BottomNav> itemsNav = <BottomNav>[
     BottomNav('Most Used', Icons.store, kPrimaryColor),
     BottomNav('Form', Icons.business, kPrimaryColor),
-    BottomNav('Get Data', Icons.account_circle, kPrimaryColor)
+    BottomNav('Get Data', Icons.accessibility, kPrimaryColor)
   ];
 
   @override
@@ -21,7 +21,7 @@ class _CodeBottomNavbarState extends State<CodeBottomNavbar> {
     return BottomNavigationBar(
       backgroundColor: kPrimaryColor,
       selectedItemColor: kWhiteColor,
-      unselectedItemColor: kGreyColor,
+      unselectedItemColor: kInactiveColor,
       currentIndex: currentIndex,
       onTap: (int index) {
         setState(() {

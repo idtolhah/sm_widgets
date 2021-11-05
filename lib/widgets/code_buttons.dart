@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:sinarmas_widget/shared/theme.dart';
+import 'package:sinarmas_widget/widgets/code_custom_button.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
 class CodeButtons extends StatelessWidget {
@@ -11,7 +12,7 @@ class CodeButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        CustomSection(title: "Buttons", subtitle: "widgets/code_buttons.dart"),
+        CustomSection(title: "Buttons", subtitle: "/widgets/code_buttons.dart"),
         Divider(),
         Row(
           children: <Widget>[
@@ -55,7 +56,7 @@ class CodeButtons extends StatelessWidget {
               style: TextButton.styleFrom(primary: Colors.transparent),
               child: Text(
                 "PRIMARY",
-                style: purpleTextStyle,
+                style: redTextStyle,
               ),
               onPressed: () {},
             ),
@@ -64,27 +65,35 @@ class CodeButtons extends StatelessWidget {
               style: TextButton.styleFrom(primary: Colors.transparent),
               child: Text(
                 "SECONDARY",
-                style: redTextStyle,
+                style: purpleTextStyle,
               ),
               onPressed: () {},
             ),
             Spacer(),
           ],
         ),
-        Row(
-          children: <Widget>[
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: kPrimaryColor),
-              child: Text("STRETCHED BUTTON", style: whiteTextStyle),
-              onPressed: () {},
-            ),
-          ],
+        Center(
+          child: Column(
+            children: [
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    elevation: 50,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(defaultRadius)),
+                    primary: kPrimaryColor),
+                child: Text("ROUNDED BUTTON", style: whiteTextStyle),
+                onPressed: () {},
+              ),
+              Divider(),
+              CustomButton(title: "STRETCHED CUSTOM BUTTON", onPressed: () {}),
+            ],
+          ),
         ),
         Divider(),
         Row(
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.phone_paused),
+              icon: Icon(Icons.access_time),
               onPressed: () {},
             ),
             Spacer(),
@@ -98,7 +107,7 @@ class CodeButtons extends StatelessWidget {
             Spacer(),
             IconButton(
               icon: Icon(
-                Icons.mic,
+                Icons.settings,
                 color: kSecondaryColor,
               ),
               onPressed: () {},
@@ -113,7 +122,7 @@ class CodeButtons extends StatelessWidget {
               backgroundColor: kWhiteColor,
               elevation: 3,
               child: Icon(
-                Icons.mic,
+                Icons.send,
                 color: Colors.black87,
               ),
               onPressed: () {

@@ -48,7 +48,7 @@ class CodeBottomSheet extends StatelessWidget {
       CustomSection(
           title: "Bottom Sheet", subtitle: "/widgets/code_bottom_sheets.dart"),
       ElevatedButton(
-        style: ElevatedButton.styleFrom(onPrimary: Colors.blue[700]),
+        style: ElevatedButton.styleFrom(primary: kPrimaryColor),
         child: Text("PRIMARY", style: whiteTextStyle),
         onPressed: () {
           showSheet(context);
