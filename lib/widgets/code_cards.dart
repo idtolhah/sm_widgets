@@ -47,27 +47,7 @@ class CodeCards extends StatelessWidget {
                   ],
                 ),
               ),
-              Row(
-                children: <Widget>[
-                  TextButton(
-                    style: TextButton.styleFrom(primary: Colors.transparent),
-                    child: Text(
-                      "SHARE",
-                      style: TextStyle(color: kAccentColor),
-                    ),
-                    onPressed: () {},
-                  ),
-                  TextButton(
-                    style: TextButton.styleFrom(primary: Colors.transparent),
-                    child: Text(
-                      "EXPLORE",
-                      style: TextStyle(color: kAccentColor),
-                    ),
-                    onPressed: () {},
-                  )
-                ],
-              ),
-              Container(height: 5)
+              Container(height: 10)
             ],
           ),
         ),
@@ -118,7 +98,7 @@ class CodeCards extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
                 ),
-                color: Colors.teal[800],
+                color: kSecondaryColor,
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -165,7 +145,7 @@ class CodeCards extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
                 ),
-                color: Colors.orange[800],
+                color: kAccentColor,
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
