@@ -30,7 +30,7 @@ class _CodeDatepickerState extends State<CodeDatepicker> {
                     borderRadius: BorderRadius.circular(20)),
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 primary: kPrimaryColor),
-            child: Text("PICK DATE", style: TextStyle(color: Colors.white)),
+            child: Text("PICK DATE", style: whiteTextStyle),
             onPressed: () {
               showDialogPicker(context);
             },

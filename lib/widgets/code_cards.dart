@@ -67,7 +67,7 @@ class CodeCards extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Phasellus a Turpis id Nisi",
-                      style: TextStyle(fontSize: 24, color: Colors.white),
+                      style: TextStyle(fontSize: 24, color: kWhiteColor),
                     ),
                     Container(height: 10),
                     Container(
@@ -82,7 +82,7 @@ class CodeCards extends StatelessWidget {
                 style: TextButton.styleFrom(primary: Colors.transparent),
                 child: Text(
                   "LISTEN NOW",
-                  style: TextStyle(color: Colors.white),
+                  style: whiteTextStyle,
                 ),
                 onPressed: () {},
               ),
@@ -107,11 +107,11 @@ class CodeCards extends StatelessWidget {
                       padding: EdgeInsets.all(15),
                       child: Text(
                         "Aliquet Et Ante \nMorbi",
-                        style: TextStyle(fontSize: 24, color: Colors.white),
+                        style: TextStyle(fontSize: 24, color: kWhiteColor),
                       ),
                     ),
                     Divider(
-                      color: Colors.white,
+                      color: kWhiteColor,
                       thickness: 0.5,
                       height: 0,
                     ),
@@ -122,11 +122,11 @@ class CodeCards extends StatelessWidget {
                         ),
                         Text(
                           "March 19, 17",
-                          style: TextStyle(color: Colors.white),
+                          style: whiteTextStyle,
                         ),
                         Spacer(),
                         IconButton(
-                          icon: Icon(Icons.event, color: Colors.white),
+                          icon: Icon(Icons.event, color: kWhiteColor),
                           onPressed: () {},
                         ),
                         Container(
@@ -157,11 +157,11 @@ class CodeCards extends StatelessWidget {
                         ),
                         Text(
                           "Call",
-                          style: TextStyle(color: Colors.white),
+                          style: whiteTextStyle,
                         ),
                         Spacer(),
                         IconButton(
-                          icon: Icon(Icons.call, color: Colors.white),
+                          icon: Icon(Icons.call, color: kWhiteColor),
                           onPressed: () {},
                         ),
                         Container(
@@ -173,7 +173,7 @@ class CodeCards extends StatelessWidget {
                       padding: EdgeInsets.all(15),
                       child: Text(
                         "Vitae Tortor \nSed",
-                        style: TextStyle(fontSize: 24, color: Colors.white),
+                        style: TextStyle(fontSize: 24, color: kWhiteColor),
                       ),
                     ),
                   ],

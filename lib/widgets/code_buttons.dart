@@ -18,13 +18,13 @@ class CodeButtons extends StatelessWidget {
             Spacer(),
             ElevatedButton(
               style: ElevatedButton.styleFrom(primary: Colors.grey[300]),
-              child: Text("NORMAL", style: TextStyle(color: Colors.grey[800])),
+              child: Text("NORMAL", style: blackTextStyle),
               onPressed: () {},
             ),
             Spacer(),
             ElevatedButton(
               style: ElevatedButton.styleFrom(primary: kPrimaryColor),
-              child: Text("PRIMARY", style: TextStyle(color: Colors.white)),
+              child: Text("PRIMARY", style: whiteTextStyle),
               onPressed: () {},
             ),
             Spacer(),
@@ -32,7 +32,7 @@ class CodeButtons extends StatelessWidget {
               style: ElevatedButton.styleFrom(primary: kSecondaryColor),
               child: Text(
                 "SECONDARY",
-                style: TextStyle(color: Colors.white),
+                style: whiteTextStyle,
               ),
               onPressed: () {},
             ),
@@ -46,7 +46,7 @@ class CodeButtons extends StatelessWidget {
               style: TextButton.styleFrom(primary: Colors.transparent),
               child: Text(
                 "NORMAL",
-                style: TextStyle(color: Colors.grey[800]),
+                style: blackTextStyle,
               ),
               onPressed: () {},
             ),
@@ -55,7 +55,7 @@ class CodeButtons extends StatelessWidget {
               style: TextButton.styleFrom(primary: Colors.transparent),
               child: Text(
                 "PRIMARY",
-                style: TextStyle(color: kPrimaryColor),
+                style: purpleTextStyle,
               ),
               onPressed: () {},
             ),
@@ -64,7 +64,7 @@ class CodeButtons extends StatelessWidget {
               style: TextButton.styleFrom(primary: Colors.transparent),
               child: Text(
                 "SECONDARY",
-                style: TextStyle(color: kSecondaryColor),
+                style: redTextStyle,
               ),
               onPressed: () {},
             ),
@@ -73,30 +73,11 @@ class CodeButtons extends StatelessWidget {
         ),
         Row(
           children: <Widget>[
-            Spacer(),
             ElevatedButton(
-              child: Text("NORMAL"),
-              onPressed: null,
-            ),
-            Spacer(),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: Colors.white),
-              child: Text(
-                "PRIMARY",
-                style: TextStyle(color: kPrimaryColor),
-              ),
+              style: ElevatedButton.styleFrom(primary: kPrimaryColor),
+              child: Text("STRETCHED BUTTON", style: whiteTextStyle),
               onPressed: () {},
             ),
-            Spacer(),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: Colors.white),
-              child: Text(
-                "SECONDARY",
-                style: TextStyle(color: kSecondaryColor),
-              ),
-              onPressed: () {},
-            ),
-            Spacer(),
           ],
         ),
         Divider(),
@@ -129,7 +110,7 @@ class CodeButtons extends StatelessWidget {
           children: <Widget>[
             FloatingActionButton(
               heroTag: "fab1",
-              backgroundColor: Colors.white,
+              backgroundColor: kWhiteColor,
               elevation: 3,
               child: Icon(
                 Icons.mic,
@@ -146,7 +127,7 @@ class CodeButtons extends StatelessWidget {
               elevation: 3,
               child: Icon(
                 Icons.add,
-                color: Colors.white,
+                color: kWhiteColor,
               ),
               onPressed: () {
                 print('Clicked');
@@ -159,7 +140,7 @@ class CodeButtons extends StatelessWidget {
               elevation: 3,
               child: Icon(
                 Icons.create,
-                color: Colors.white,
+                color: kWhiteColor,
               ),
               onPressed: () {
                 print('Clicked');

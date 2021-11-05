@@ -29,7 +29,7 @@ class _CodeTimepickerState extends State<CodeTimepicker> {
                     borderRadius: BorderRadius.circular(20)),
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 primary: kAccentColor),
-            child: Text("PICK TIME", style: TextStyle(color: Colors.white)),
+            child: Text("PICK TIME", style: whiteTextStyle),
             onPressed: () {
               showDialogPicker(context);
             },

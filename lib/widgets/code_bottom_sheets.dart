@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:sinarmas_widget/shared/theme.dart';
 import 'package:sinarmas_widget/widgets/custom_section.dart';
 
 class CodeBottomSheet extends StatelessWidget {
@@ -11,7 +12,7 @@ class CodeBottomSheet extends StatelessWidget {
         context: context,
         builder: (BuildContext bc) {
           return Container(
-            color: Colors.white,
+            color: kWhiteColor,
             padding: EdgeInsets.symmetric(vertical: 0, horizontal: 5),
             child: Wrap(
               children: <Widget>[
@@ -48,7 +49,7 @@ class CodeBottomSheet extends StatelessWidget {
           title: "Bottom Sheet", subtitle: "/widgets/code_bottom_sheets.dart"),
       ElevatedButton(
         style: ElevatedButton.styleFrom(onPrimary: Colors.blue[700]),
-        child: Text("PRIMARY", style: TextStyle(color: Colors.white)),
+        child: Text("PRIMARY", style: whiteTextStyle),
         onPressed: () {
           showSheet(context);
         },

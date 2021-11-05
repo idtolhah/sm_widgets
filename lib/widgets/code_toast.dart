@@ -30,7 +30,7 @@ class _CodeToastState extends State<CodeToast> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 primary: kAccentColor),
-            child: Text("SIMPLE", style: TextStyle(color: Colors.white)),
+            child: Text("SIMPLE", style: whiteTextStyle),
             onPressed: () {
               showSimpleToast(context);
             },
@@ -43,8 +43,7 @@ class _CodeToastState extends State<CodeToast> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 primary: kAccentColor),
-            child:
-                Text("COLORED PRIMARY", style: TextStyle(color: Colors.white)),
+            child: Text("COLORED PRIMARY", style: whiteTextStyle),
             onPressed: () {
               showColoredPrimaryToast(context);
             },
@@ -59,7 +58,7 @@ class _CodeToastState extends State<CodeToast> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 primary: kAccentColor),
-            child: Text("SIMPLE", style: TextStyle(color: Colors.white)),
+            child: Text("SIMPLE", style: whiteTextStyle),
             onPressed: () {
               showSimpleSnackbar(context);
             },
@@ -72,7 +71,7 @@ class _CodeToastState extends State<CodeToast> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 primary: kAccentColor),
-            child: Text("WITH ACTION", style: TextStyle(color: Colors.white)),
+            child: Text("WITH ACTION", style: whiteTextStyle),
             onPressed: () {
               snackBarWithAction(context);
             },
